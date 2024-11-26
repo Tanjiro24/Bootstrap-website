@@ -1,0 +1,84 @@
+:root {
+    --bs-dark-color: #1a1d20;
+    --bs-dark-primary: #1c1c1c;
+    --bs-main-color: #fff;
+    --bs-primary-color: #c6c6c6;
+    --secondary-color: #29a9fd;
+    --bs-supporting-color: #C850C0;
+}
+
+/* media queries for responsiveness */
+
+@media screen and (max-width:1200px) {
+    .hero-video--section {
+        width: 20rem;
+        border-radius: 1rem;
+    }
+
+    .more-info-section img {
+        position: absolute;
+        bottom: 10%;
+        /*right: 10%;*/
+        /*top: 50%;*/
+        top: 0;
+        left: 55%;
+        max-width: 100%;
+        width: 50%;
+        transform: scaleX(1);
+    }
+
+
+    .para-width {
+        width: 90%
+    }
+
+    .carousel-indicators{
+        bottom: -8%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .more-info-section img {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:998px) {
+
+    .navbar-toggler {
+        border-color: var(--bs-main-color);
+    }
+
+    .navbar-toggler-icon {
+        color: var(--bs-main-color);
+        background-color: var(--bs-main-color);
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    section .common-heading {
+        font-size: 2rem;
+    }
+
+    section .para-width {
+        width: auto;
+    }
+
+    .hero-section {
+        height: 100vh;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+
+    .more-info-section {
+        text-align: center;
+    }
+}
